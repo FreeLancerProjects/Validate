@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            >
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/co_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/white_left_arrow"
+                    android:padding="10dp"
+                    android:layout_marginStart="5dp"
+                    tools:ignore="RtlCompat"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/arrow"
+                    app:layout_constraintTop_toTopOf="@id/arrow"
+                    app:layout_constraintBottom_toBottomOf="@id/arrow"
+                    android:textSize="18sp"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:clickable="false"
+                    android:longClickable="false"
+
+
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/logo"
+                    app:layout_constraintHorizontal_bias=".4"
+                    />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintEnd_toStartOf="@id/btn_history"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/Scan"
+        android:textSize="17sp"
+
+        />
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="17sp"
+        android:text="@string/History"
+        app:layout_constraintStart_toEndOf="@id/btn_scan"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/gray2"
+        android:textColor="@color/white"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_history_scan_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="0dp"
+        >
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tahkk</string>
+    <string name="back">Back</string>
+    <string name="focus_camera_to_qr_code">Focus camera to QR code</string>
+    <string name="History">History</string>
+    <string name="Scan">Scan</string>
+    <string name="inform">Inform</string>
+    <string name="quality">Quality</string>
+    <string name="production_date">Production date</string>
+    <string name="name">Name</string>
+    <string name="serial_number">Serial number</string>
+    <string name="empty_history">Empty history</string>
+    <string name="delete_all">Delete All</string>
+    <string name="deleting">Deleting....</string>
+    <string name="price">Price</string>
+    <string name="sr">SR</string>
+    <string name="something">Something went haywire</string>
+    <string name="notifications">Notifications</string>
+    <string name="ok">Ok</string>
+    <string name="failed">Failed</string>
+    <string name="pro_not_sup">This product is not supported by tahkk</string>
+    <string name="trade">trade</string>
+    <string name="wait">Wait...</string>
+</resources>
